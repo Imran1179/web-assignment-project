@@ -14,9 +14,9 @@
         <nav>
             <h3 class="nav-tittle">Im<span class="text-primary">r</span>an</h3>
             <ul>
-                <li><a class="dark-2" href="">Portfolio</a></li>
-                <li><a class="dark-2" href="">Blog</a></li>
-                <li><button class="btn-primary">Hire Me</button></li>
+                <li><button onclick="openPortfolio()" class="dark-2 btn-primary" href="">Education</button></li>
+                <li><button onclick="openExperience()" class="dark-2 btn-primary" href="">Experience</button></li>
+                <li><button onclick="openHire()" class="btn-primary">Hire Me</button></li>
             </ul>
         </nav>
         <div class="banner">
@@ -29,8 +29,6 @@
             </div>
             <img class="profile-pic" src="images/me-removebg-preview.png" alt="">
         </div>
-        
-        <!-- Modal (এটি Contact বাটনের পর বসাতে হবে) -->
         <div id="contactModal" class="modal">
             <div class="modal-content">
                 <span class="close-btn" id="closeModal">&times;</span>
@@ -72,7 +70,7 @@
            </div>
         </section>
 
-        <section class="skills">
+        <section id="experiences" class="skills">
             <h3 class="skill-tittle text-center">What I do</h3>
             <p class="skill-description text-center">I have more than 10 years experience building software for clients all over the world. Below is a quick overview of my main technical skill sets and technologies i use. Want to find out more about my experience? Check out my online resume and project portfolio.</p>
 
@@ -101,7 +99,7 @@
             </div>
         </section>
 
-        <section class="resume">
+        <section id="faqHolder" class="resume">
             <h3 class="section-tittle">A summary of My Resume</h3>
             <div class="resume-container">
                 <!-- .resume-column*2>h3.resume-column-tittle+.experience*3>h4.experience-tittle+h5.experience-sub-tittle+.experience-description -->
@@ -158,7 +156,7 @@
             </div>
         </section>
     </main>
-    <footer class="secondary-background">
+    <footer id="hire" class="secondary-background">
         <div class="footer-column">
             <h3 class="section-tittle">Lets Connect</h3>
             <p class="section-tittle-description">Please fill out the form on this section to contact with me or call between 9:00 A.M and 8.00 P.M ET, Monday through Friday.</p>
@@ -178,6 +176,7 @@
         </form>
         </div>
     </footer>
-    <script src="./script/script.js"></script>     
+    <script src="./script/script.js"></script>  
+    <script src="./script/toggle.js"></script>   
     </body>
 </html>

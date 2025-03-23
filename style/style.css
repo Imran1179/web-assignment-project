@@ -65,6 +65,8 @@ nav ul{
     text-align: left;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+    
    
 }
 
