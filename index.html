@@ -6,9 +6,7 @@
     <title>Web Developer Portfolio.</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" /> -->
-<!-- <script src="https://cdn.tailwindcss.com"></script> -->
- 
+    
     
 </head>
 <body>
@@ -23,14 +21,28 @@
         </nav>
         <div class="banner">
             <div class="banner-content">
-                <h4 class="banner-greetings">Hi, I  am</h4>
+                <h4 class="banner-greetings">Hi, I am</h4>
                 <h1 class="banner-tittle">Imran</h1>
                 <p class="banner-description">A dedicated web developer and software requirement analysis expert.</p>
                 <button class="btn-primary"> <i class="fa-solid fa-download"></i> Download CV</button>
-                <button class="btn-primary">Contact</button>
+                <button class="btn-primary" id="contactBtn">Contact</button>
             </div>
             <img class="profile-pic" src="images/me-removebg-preview.png" alt="">
         </div>
+        
+        <!-- Modal (এটি Contact বাটনের পর বসাতে হবে) -->
+        <div id="contactModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" id="closeModal">&times;</span>
+                <h2>Contact Information</h2>
+                <p><strong>Name:</strong> Imran</p>
+                <p><strong>Address:</strong> Dhaka, Bangladesh</p>
+                <p><strong>Phone:</strong> 01521776572</p>
+                <p><strong>Email:</strong> imran0155@gmail.com</p>
+                <button class="btn-primary" id="closeModalBtn">Close</button>
+            </div>
+        </div>
+        
     </header>
 
     <main>
@@ -166,4 +178,6 @@
         </form>
         </div>
     </footer>
+    <script src="./script/script.js"></script>     
+    </body>
 </html>
